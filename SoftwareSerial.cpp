@@ -262,5 +262,5 @@ void IRAM_ATTR SoftwareSerial::rxRead() {
    }
    // Must clear this bit in the interrupt register,
    // it gets set even when interrupts are disabled
-   GPIO_REG_WRITE(GPIO.status_w1tc, 1 << m_rxPin);
+   GPIO_REG_WRITE(GPIO.status_w1tc.status_w1tc, 1 << m_rxPin);
 }
